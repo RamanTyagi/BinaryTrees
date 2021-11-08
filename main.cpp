@@ -567,7 +567,7 @@ mp.isBST=lp.isBST&&rp.isBST&&p->data<=rp.mini&&p->data>-lp.maxi;
     if(mp.isBST)
     {
         mp.root_largest=p;
-        mp.size_largest=lp.size_largest+rp.size_largest+1;
+        mp.size_largest=lp.size_largest+rp.size_largest+1; // If mp is a bst than lp and rp must have been bst!!
     }
     else if(lp.size_largest>rp.size_largest)
     {
